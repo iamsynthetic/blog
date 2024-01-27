@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+
+font combinations 
+Rubik + Roboto Mono
+Karla & Inconsolata
+Anton & Roboto
+Mulish & Space Mono
+*/
+
+.anton400 {
+  font-family: var(--font-anton400);
+}
+
+.robotomono200 {
+  font-family: var(--font-robotomono200);
+}
+.robotomono400 {
+  font-family: var(--font-robotomono400);
+}
+.robotomono600 {
+  font-family: var(--font-robotomono600);
+}
+
+.rubik400 {
+  font-family: var(--font-rubik400);
+}
+.rubik600 {
+  font-family: var(--font-rubik600);
+}
+.rubik900 {
+  font-family: var(--font-rubik900);
+}
+
+/* midnight: "#0D0D0D"
+dark: "#3B3C40"
+cream: "#F2D0C4"
+banana: '#E5F280'
+coolblue: '#DCE4F2' */
+
+:root {
+  --dark: rgb(59, 60, 64); /* #3B3C40 */
+  --midnight: rgb(13, 13, 13);
+  --midnighthover: rgb(53, 53, 53);
+  --cream: rgb(242, 208, 196);
+  --creamhover: rgb(224, 192, 180);
+  --banana: rgb(229, 242, 128);
+  --coolblue: rgb(220, 228, 242);
+  --coolbluehover: rgb(185, 196, 215);
+  --bluelink: rgb(94, 125, 178);
+  --bluelinkhover: rgb(39, 77, 141);
+  --darkred: rgb(166, 47, 3);
+  --hoverred: rgb(224, 63, 4);
+  --lightred: rgb(255, 72, 5);
+}
+
+.darkred {
+  color: rgb(166, 47, 3);
+}
+.hoverred {
+  color: rgb(224, 63, 4);
+}
+.darkcolor {
+  color: rgb(59, 60, 64);
+}
+.midnightcolor {
+  color: rgb(13, 13, 13);
+}
+.midnighthover {
+  color: rgb(53, 53, 53);
+}
+.creamcolor {
+  color: rgb(242, 208, 196);
+}
+.creamhover {
+  color: rgb(224, 192, 180);
+}
+.bananacolor {
+  color: rgb(229, 242, 128);
+}
+.coolbluecolor {
+  color: rgb(220, 228, 242);
+}
+.coolbluehover {
+  color: rgb(185, 196, 215);
+}
+.bluelink {
+  color: rgb(94, 125, 178);
+}
+.bluelinkhover {
+  color: rgb(65, 91, 135);
+}
+
+* {
+  min-width: 0;
+}
+
+.midnight-bg {
+  background-color: var(--midnight);
+}
+.midnight-color {
+  color: var(--midnight);
+}
+
+.cream-bg {
+  background-color: var(--cream);
+}
+.cream-color {
+  color: var(--cream);
+}
+
+::selection {
+  color: var(--bananacolor);
+  background: var(--darkred);
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+.thenav {
+  height: 100px;
+  width: 100%;
+  padding: 20px 30px 0 30px;
+}
+
+.box {
+  height: calc(100vh - 100px);
+  padding: 20px 30px 0 30px;
+}

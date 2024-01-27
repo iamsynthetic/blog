@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+
+font combinations 
+Rubik + Roboto Mono
+Karla & Inconsolata
+Anton & Roboto
+Mulish & Space Mono
+*/
+
+.rubik600 {
+  font-family: var(--font-rubik600);
+}
+
+.robotomono200 {
+  font-family: var(--font-robotomono200);
+}
+.robotomono400 {
+  font-family: var(--font-robotomono400);
+}
+.robotomono600 {
+  font-family: var(--font-robotomono600);
+}
+
+.rubik400 {
+  font-family: var(--font-rubik400);
+}
+.rubik600 {
+  font-family: var(--font-rubik600);
+}
+.rubik900 {
+  font-family: var(--font-rubik900);
+}
+
+/* midnight: "#0D0D0D"
+dark: "#3B3C40"
+cream: "#F2D0C4"
+banana: '#E5F280'
+coolblue: '#DCE4F2' */
+
+:root {
+  --light: rgb(249, 247, 253);
+  --dark: rgb(29, 35, 42);
+  --primary: rgb(231, 121, 193);
+  --primarydm: rgb(212, 38, 152);
+  --secondary: rgb(231, 121, 193);
+  --accent: rgb(231, 121, 193);
+  --neutral: rgb(34, 21, 81);
+  --neutralhover: rgb(227, 225, 230);
+  --base-100: rgb(231, 121, 193);
+  --info: rgb(231, 121, 193);
+  --success: rgb(231, 121, 193);
+  --warning: rgb(231, 121, 193);
+  --error: rgb(231, 121, 193);
+  /* --btntext: rgb(249, 247, 253); */
+  /*
+  "primary": "##e779c1", #65c3c8
+"secondary": "#ffffff",
+"accent": "#ffffff",
+"neutral": "#ffffff",
+"base-100": "#ffffff",
+"info": "#ffffff",
+"success": "#00ffff",
+"warning": "#ffffff",
+"error": "#ffffff",*/
+}
+
+.bg-light {
+  color: rgb(249, 247, 253);
+}
+.bg-dark {
+  color: rgb(29, 35, 42);
+}
+
+/* .darkred {
+  color: rgb(166, 47, 3);
+}
+.hoverred {
+  color: rgb(224, 63, 4);
+}
+.darkcolor {
+  color: rgb(59, 60, 64);
+}
+.midnightcolor {
+  color: rgb(13, 13, 13);
+}
+.midnighthover {
+  color: rgb(53, 53, 53);
+}
+.creamcolor {
+  color: rgb(242, 208, 196);
+}
+.creamhover {
+  color: rgb(224, 192, 180);
+}
+.bananacolor {
+  color: rgb(229, 242, 128);
+}
+.coolbluecolor {
+  color: rgb(220, 228, 242);
+}
+.coolbluehover {
+  color: rgb(185, 196, 215);
+}
+.bluelink {
+  color: rgb(94, 125, 178);
+}
+.bluelinkhover {
+  color: rgb(65, 91, 135);
+} */
+
+* {
+  min-width: 0;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: light;
+  color: var(--dark);
+  background-color: var(--light);
+
+  /* need to change all colours to be light versions */
+  /* --primary: rgb(231, 121, 193); */
+  --neutral: rgb(34, 21, 81);
+  --neutralhover: rgb(121, 83, 255);
+  --btn-neutral-text: rgb(249, 247, 253);
+}
+:root[data-theme="light"] {
+  color-scheme: dark;
+  color: var(--light);
+  background-color: var(--dark);
+
+  /* need to change all colours to be dark versions */
+  /* --primary: rgb(212, 38, 152); */
+  --neutral: rgb(249, 247, 253);
+  --neutralhover: rgb(227, 225, 230);
+  --btn-neutral-text: rgb(34, 21, 81);
+}
+.btn-primary {
+  /* color: var(--btn-neutral-text); */
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-neutral {
+  color: var(--btn-neutral-text);
+  background-color: var(--neutral);
+  border-color: var(--neutral);
+}
+.btn-neutral:hover {
+  color: var(--btn-neutral-text);
+  background-color: var(--neutralhover);
+  border-color: var(--neutralhover);
+}
+.txt-title {
+  color: var(--primary);
+}
+::selection {
+  color: var(--bananacolor);
+  background: var(--darkred);
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+.thenav {
+  height: 100px;
+  width: 100%;
+  padding: 20px 30px 0 30px;
+}
+
+.box {
+  height: calc(100vh - 100px);
+  padding: 20px 30px 0 30px;
+}
