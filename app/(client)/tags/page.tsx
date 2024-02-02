@@ -29,7 +29,7 @@ const page = async () => {
           <Header title="#tags" tags={true} />
           {tags?.length > 0 &&
             tags?.map((tag) => (
-              <Link key={tag?._id} href={`/tag/${tag?.slug?.current}`}>
+              <Link key={tag?._id} href={`/tags/${tag?.slug?.current}`}>
                 <div className="lekton700 text-sm txt-link-tag p-4 text-center">
                   #{tag?.name} ({tag?.postCount})
                 </div>

@@ -36,23 +36,17 @@ const page = async ({ params }: Params) => {
 
   return (
     <>
-      {posts?.length > 0 &&
-        posts?.map((post) => (
-          <div key={post?._id}>
-            <div className="flex flex-col items-center">
-              <div className="w-9/12 max-w-[1200px] section-minheight">
-                <Header title="" tags={true} />
-                <div>
-                  {post.title}
-                  <PostComponent key={post?._id} post={post} />
-                </div>
+      <div className="flex flex-col items-center">
+        <div className="w-9/12 max-w-[1200px] section-minheight">
+          <Header title="" tags={true} />
+          {posts?.length > 0 &&
+            posts?.map((post) => (
+              <div key={post?._id}>
+                <PostComponent key={post?._id} post={post} />
               </div>
-              <div className="thefooter">
-                <Footer title="FOOTER" tags={true} />
-              </div>
-            </div>
-          </div>
-        ))}
+            ))}
+        </div>
+      </div>
     </>
   );
 };
