@@ -76,8 +76,20 @@ export default page;
 const myPortableTextComponents = {
   types: {
     image: ({ value }: any) => (
-      <div className="relative h-96 m-10 mx-auto">
-        <Image src={urlForImage(value)} alt="Post" width={300} height={300} />
+      <div
+        className="relative m-10 mx-auto"
+        style={{ position: "relative", height: "500px" }}
+      >
+        <Image
+          src={urlForImage(value)}
+          alt="Post"
+          quality={100}
+          fill
+          // width={100}
+          // height={100}
+          sizes="100vw"
+          style={{ objectFit: "fit" }}
+        />
       </div>
     ),
   },
