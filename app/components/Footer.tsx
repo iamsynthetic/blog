@@ -26,12 +26,14 @@ const Footer = ({ title = "", tags = false }: Props) => {
         <div className="grid grid-cols-2 gap-4">
           <div className="flex justify-start">
             <div className="grid-rows-2">
-              <div className="uppercase text-lg poppins700">Hi, I'm Ryan</div>
+              <div className="uppercase text-lg poppins700">
+                Hi, I&#39;am Ryan
+              </div>
               <div className="flex justify-end lekton400">
-                I am front-end developer. I've been working for two years at a
+                I am front-end developer. I have been working for two years at a
                 large advertising agency in the great white north. This blog
                 will serve as my online journal of sorts. Glad you stopped by,
-                and please don't hesitate to email me.
+                and please do not hesitate to email me.
               </div>
             </div>
           </div>

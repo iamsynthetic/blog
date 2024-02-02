@@ -43,7 +43,7 @@ const Navbar = ({ title = "", tags = true }: Props) => {
     } else {
       setSecreturl(false);
     }
-  });
+  }, [pathname]);
 
   return (
     <div className="thenav">
