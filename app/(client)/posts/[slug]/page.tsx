@@ -88,7 +88,7 @@ const myPortableTextComponents = {
           // width={100}
           // height={100}
           sizes="100vw"
-          style={{ objectFit: "fit" }}
+          style={{ objectFit: "cover" }}
         />
       </div>
     ),
