@@ -22,6 +22,6 @@
     },
     "target": "ES2017"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/utils/getTheme.js", "app/components/SetTheme.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/utils/getTheme.js", "app/components/SetTheme.jsx", "tailwind.config.js"],
   "exclude": ["node_modules"]
 }

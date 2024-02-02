@@ -6,6 +6,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import React from "react";
+import Header from "@/app/components/Header";
+import Footer from "@/app/components/Footer";
 
 interface Params {
   params: {
@@ -43,20 +45,27 @@ const page = async ({ params }: Params) => {
 
   return (
     <>
-      <div>{post?.title}</div>
-      <div>{new Date(post?.publishedAt).toDateString()}</div>
-      <div>
-        {post?.tags?.map((tag) => (
-          <Link key={tag?._id} href={`/tag/${tag.slug.current}`}>
-            <span>#{tag.name}</span>
-          </Link>
-        ))}
-      </div>
-      <div className={richTextStyles}>
-        <PortableText
-          value={post?.body}
-          components={myPortableTextComponents}
-        />
+      <div className="flex flex-col items-center">
+        <div className="w-9/12 max-w-[1200px] section-minheight">
+          <Header title={post?.title} tags={true} />
+          <div>{new Date(post?.publishedAt).toDateString()}</div>
+          <div className="txt-link-tag">
+            {post?.tags?.map((tag) => (
+              <Link key={tag?._id} href={`/tags/${tag.slug.current}`}>
+                <span>#{tag.name} </span>
+              </Link>
+            ))}
+          </div>
+          <div className={richTextStyles}>
+            <PortableText
+              value={post?.body}
+              components={myPortableTextComponents}
+            />
+          </div>
+        </div>
+        <div className="thefooter">
+          <Footer title="FOOTER" tags={true} />
+        </div>
       </div>
     </>
   );
@@ -67,8 +76,25 @@ export default page;
 const myPortableTextComponents = {
   types: {
     image: ({ value }: any) => (
-      <Image src={urlForImage(value)} alt="Post" width={300} height={300} />
+      <div className="relative h-96 m-10 mx-auto">
+        <Image src={urlForImage(value)} alt="Post" width={300} height={300} />
+      </div>
     ),
+  },
+  marks: {
+    // Ex. 2: rendering a custom `link` annotation
+    link: ({ value, children }: any) => {
+      const target = (value?.href || "").startsWith("http")
+        ? "_blank"
+        : undefined;
+      return (
+        <div className="txt-link underline">
+          <a href={value?.href} target={target}>
+            {children}
+          </a>
+        </div>
+      );
+    },
   },
 };
 

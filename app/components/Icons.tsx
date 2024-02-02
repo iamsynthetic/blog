@@ -1,27 +1,18 @@
+import React from "react";
+
 export const SunIcon = () => {
   return (
     <svg
-      fill="#f1fa8c"
-      width="30px"
-      height="30px"
-      viewBox="-9 0 32 32"
-      version="1.1"
+      className="w-[17px] h-[17px] text-gray-800 dark:text-white"
       xmlns="http://www.w3.org/2000/svg"
-      stroke="#f1fa8c"
+      fill="#f9f7ff"
+      viewBox="0 0 24 24"
     >
-      <g id="SVGRepo_bgCarrier" strokeWidth="0" />
-
-      <g
-        id="SVGRepo_tracerCarrier"
-        strokeLinecap="round"
-        strokeLinejoin="round"
+      <path
+        fillRule="evenodd"
+        d="M13 3a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0V3ZM6.3 5A1 1 0 0 0 5 6.2l1.4 1.5a1 1 0 0 0 1.5-1.5L6.3 5Zm12.8 1.3A1 1 0 0 0 17.7 5l-1.5 1.4a1 1 0 0 0 1.5 1.5L19 6.3ZM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm-9 4a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2H3Zm16 0a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2h-2ZM7.8 17.7a1 1 0 1 0-1.5-1.5L5 17.7A1 1 0 1 0 6.3 19l1.5-1.4Zm9.9-1.5a1 1 0 0 0-1.5 1.5l1.5 1.4a1 1 0 0 0 1.4-1.4l-1.4-1.5ZM13 19a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0v-2Z"
+        clipRule="evenodd"
       />
-
-      <g id="SVGRepo_iconCarrier">
-        {" "}
-        <title>sun</title>{" "}
-        <path d="M10.68 21.64c-3.12 0-5.64-2.52-5.64-5.64s2.52-5.64 5.64-5.64 5.64 2.52 5.64 5.64-2.52 5.64-5.64 5.64zM10.68 12.040c-2.2 0-3.96 1.76-3.96 3.96s1.76 3.96 3.96 3.96 3.96-1.76 3.96-3.96-1.76-3.96-3.96-3.96zM10.68 9.040c-0.48 0-0.84-0.36-0.84-0.84v-2.040c0-0.48 0.36-0.84 0.84-0.84s0.84 0.36 0.84 0.84v2.040c0 0.48-0.36 0.84-0.84 0.84zM16.2 11.32c-0.2 0-0.44-0.080-0.6-0.24-0.32-0.32-0.32-0.84 0-1.2l1.44-1.44c0.32-0.32 0.84-0.32 1.2 0 0.32 0.32 0.32 0.84 0 1.2l-1.44 1.44c-0.2 0.16-0.4 0.24-0.6 0.24zM18.48 16.84c-0.48 0-0.84-0.36-0.84-0.84s0.36-0.84 0.84-0.84h2.040c0.48 0 0.84 0.36 0.84 0.84s-0.36 0.84-0.84 0.84h-2.040zM17.64 23.8c-0.2 0-0.44-0.080-0.6-0.24l-1.44-1.48c-0.32-0.32-0.32-0.84 0-1.2 0.32-0.32 0.84-0.32 1.2 0l1.44 1.44c0.32 0.32 0.32 0.84 0 1.2-0.16 0.2-0.4 0.28-0.6 0.28zM10.68 26.68c-0.48 0-0.84-0.36-0.84-0.84v-2.040c0-0.48 0.36-0.84 0.84-0.84s0.84 0.36 0.84 0.84v2.040c0 0.48-0.36 0.84-0.84 0.84zM3.72 23.8c-0.2 0-0.44-0.080-0.6-0.24-0.32-0.32-0.32-0.84 0-1.2l1.44-1.44c0.32-0.32 0.84-0.32 1.2 0s0.32 0.84 0 1.2l-1.44 1.44c-0.16 0.16-0.4 0.24-0.6 0.24zM0.84 16.84c-0.48 0-0.84-0.36-0.84-0.84s0.36-0.84 0.84-0.84h2.040c0.48 0 0.84 0.36 0.84 0.84s-0.36 0.84-0.84 0.84h-2.040zM5.16 11.32c-0.2 0-0.44-0.080-0.6-0.24l-1.44-1.44c-0.32-0.32-0.32-0.84 0-1.2 0.32-0.32 0.84-0.32 1.2 0l1.44 1.44c0.32 0.32 0.32 0.84 0 1.2-0.16 0.16-0.36 0.24-0.6 0.24z" />{" "}
-      </g>
     </svg>
   );
 };
@@ -29,30 +20,16 @@ export const SunIcon = () => {
 export const MoonIcon = () => {
   return (
     <svg
-      fill="none"
-      width="22px"
-      height="22px"
-      viewBox="0 0 24 24"
+      className="w-[15px] h-[15px] text-gray-800 dark:text-white"
       xmlns="http://www.w3.org/2000/svg"
-      stroke="#70acc7"
+      fill="#1d232a"
+      viewBox="0 0 24 24"
     >
-      <g id="SVGRepo_bgCarrier" strokeWidth="0" />
-
-      <g
-        id="SVGRepo_tracerCarrier"
-        strokeLinecap="round"
-        strokeLinejoin="round"
+      <path
+        fill-rule="evenodd"
+        d="M11.7 2a10 10 0 1 0 9.8 13.3 1 1 0 0 0-1-1.3H20a8 8 0 0 1-7.6-10.6l.1-.4a1 1 0 0 0-.8-1Z"
+        clip-rule="evenodd"
       />
-
-      <g id="SVGRepo_iconCarrier">
-        {" "}
-        <path
-          fillRule="evenodd"
-          clipRule="evenodd"
-          d="M11.0174 2.80157C6.37072 3.29221 2.75 7.22328 2.75 12C2.75 17.1086 6.89137 21.25 12 21.25C16.7767 21.25 20.7078 17.6293 21.1984 12.9826C19.8717 14.6669 17.8126 15.75 15.5 15.75C11.4959 15.75 8.25 12.5041 8.25 8.5C8.25 6.18738 9.33315 4.1283 11.0174 2.80157ZM1.25 12C1.25 6.06294 6.06294 1.25 12 1.25C12.7166 1.25 13.0754 1.82126 13.1368 2.27627C13.196 2.71398 13.0342 3.27065 12.531 3.57467C10.8627 4.5828 9.75 6.41182 9.75 8.5C9.75 11.6756 12.3244 14.25 15.5 14.25C17.5882 14.25 19.4172 13.1373 20.4253 11.469C20.7293 10.9658 21.286 10.804 21.7237 10.8632C22.1787 10.9246 22.75 11.2834 22.75 12C22.75 17.9371 17.9371 22.75 12 22.75C6.06294 22.75 1.25 17.9371 1.25 12Z"
-          fill="#1C274C"
-        />{" "}
-      </g>
     </svg>
   );
 };
@@ -84,6 +61,65 @@ export const BackArrowIcon = () => {
           strokeLinejoin="round"
         />{" "}
       </g>
+    </svg>
+  );
+};
+
+export const TwitterLightIcon = () => {
+  return (
+    <svg
+      className="w-[12px] h-[12px] text-gray-800 dark:text-white"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="#f9f7ff"
+      viewBox="0 0 20 20"
+    >
+      <path
+        fill="#f9f7ff"
+        d="M13.8 10.5 20.7 2h-3l-5.3 6.5L7.7 2H1l7.8 11-7.3 9h3l5.7-7 5.1 7H22l-8.2-11.5Zm-2.4 3-1.4-2-5.6-7.9h2.3l4.5 6.3 1.4 2 6 8.5h-2.3l-4.9-7Z"
+      />
+    </svg>
+  );
+};
+
+export const TwitterDarkIcon = () => {
+  return (
+    <svg
+      className="w-[12px] h-[12px] text-gray-800 dark:text-white"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="#1d232a"
+      viewBox="0 0 20 20"
+    >
+      <path
+        fill="#1d232a"
+        d="M13.8 10.5 20.7 2h-3l-5.3 6.5L7.7 2H1l7.8 11-7.3 9h3l5.7-7 5.1 7H22l-8.2-11.5Zm-2.4 3-1.4-2-5.6-7.9h2.3l4.5 6.3 1.4 2 6 8.5h-2.3l-4.9-7Z"
+      />
+    </svg>
+  );
+};
+
+export const EmailLightIcon = () => {
+  return (
+    <svg
+      className="w-[15px] h-[15px] text-gray-800 dark:text-white"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path d="M3.6 6.4 12 13l8.7-6.6L13 2.3a2 2 0 0 0-2 0l-7.4 4Z" />
+      <path d="m22 8-8.8 6.7a2 2 0 0 1-2.4 0L2 7.7v11.2A3 3 0 0 0 5 22h14a3 3 0 0 0 3-3V8Z" />
+    </svg>
+  );
+};
+export const EmailDarktIcon = () => {
+  return (
+    <svg
+      className="w-[15px] h-[15px] text-gray-800 dark:text-white"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="black"
+      viewBox="0 0 24 24"
+    >
+      <path d="M3.6 6.4 12 13l8.7-6.6L13 2.3a2 2 0 0 0-2 0l-7.4 4Z" />
+      <path d="m22 8-8.8 6.7a2 2 0 0 1-2.4 0L2 7.7v11.2A3 3 0 0 0 5 22h14a3 3 0 0 0 3-3V8Z" />
     </svg>
   );
 };

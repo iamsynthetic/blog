@@ -9,111 +9,93 @@ Rubik + Roboto Mono
 Karla & Inconsolata
 Anton & Roboto
 Mulish & Space Mono
+
+new font combos
+ruda - 48px
+roboto slab 16px
+
+lekton and poppins
 */
 
-.rubik600 {
-  font-family: var(--font-rubik600);
+.lekton400 {
+  font-family: var(--font-lekton400);
 }
 
-.robotomono200 {
-  font-family: var(--font-robotomono200);
+.lekton700 {
+  font-family: var(--font-lekton700);
 }
-.robotomono400 {
-  font-family: var(--font-robotomono400);
+.poppins200 {
+  font-family: var(--font-poppins200);
 }
-.robotomono600 {
-  font-family: var(--font-robotomono600);
+.poppins700 {
+  font-family: var(--font-poppins700);
 }
-
-.rubik400 {
-  font-family: var(--font-rubik400);
-}
-.rubik600 {
-  font-family: var(--font-rubik600);
-}
-.rubik900 {
-  font-family: var(--font-rubik900);
-}
-
-/* midnight: "#0D0D0D"
-dark: "#3B3C40"
-cream: "#F2D0C4"
-banana: '#E5F280'
-coolblue: '#DCE4F2' */
 
 :root {
-  --light: rgb(249, 247, 253);
-  --dark: rgb(29, 35, 42);
-  --primary: rgb(231, 121, 193);
-  --primarydm: rgb(212, 38, 152);
-  --secondary: rgb(231, 121, 193);
-  --accent: rgb(231, 121, 193);
-  --neutral: rgb(34, 21, 81);
-  --neutralhover: rgb(227, 225, 230);
-  --base-100: rgb(231, 121, 193);
-  --info: rgb(231, 121, 193);
-  --success: rgb(231, 121, 193);
-  --warning: rgb(231, 121, 193);
-  --error: rgb(231, 121, 193);
-  /* --btntext: rgb(249, 247, 253); */
-  /*
-  "primary": "##e779c1", #65c3c8
-"secondary": "#ffffff",
-"accent": "#ffffff",
-"neutral": "#ffffff",
-"base-100": "#ffffff",
-"info": "#ffffff",
-"success": "#00ffff",
-"warning": "#ffffff",
-"error": "#ffffff",*/
+  --light: #f9f7fd;
+  --dark: #1d232a;
+  --primary: #e779c1;
+  --primarydm: #d42698;
+  --secondary: #58c7f3;
+  --secondarydm: #3684a3;
+  --accent: #ffd200;
+  --neutral: #221551;
+  --neutralhover: #e3e1e6;
+  --info: #53c0f3;
+  --success: #71ead2;
+  --warning: #eace6c;
+  --error: #ec8c79;
+  --border: #c3bece;
 }
 
-.bg-light {
-  color: rgb(249, 247, 253);
+.color-light {
+  color: var(--light);
 }
-.bg-dark {
-  color: rgb(29, 35, 42);
+.color-dark {
+  color: var(--dark);
 }
-
-/* .darkred {
-  color: rgb(166, 47, 3);
+.color-primary {
+  color: var(--primary);
 }
-.hoverred {
-  color: rgb(224, 63, 4);
+.color-secondary {
+  color: var(--secondary);
 }
-.darkcolor {
-  color: rgb(59, 60, 64);
+.color-accent {
+  color: var(--accent);
 }
-.midnightcolor {
-  color: rgb(13, 13, 13);
+.color-neutral {
+  color: var(--neutral);
 }
-.midnighthover {
-  color: rgb(53, 53, 53);
+.color-info {
+  color: var(--info);
 }
-.creamcolor {
-  color: rgb(242, 208, 196);
+.color-success {
+  color: var(--success);
 }
-.creamhover {
-  color: rgb(224, 192, 180);
+.color-warning {
+  color: var(--warning);
 }
-.bananacolor {
-  color: rgb(229, 242, 128);
+.color-error {
+  color: var(--error);
 }
-.coolbluecolor {
-  color: rgb(220, 228, 242);
+.color-border {
+  color: var(--border);
 }
-.coolbluehover {
-  color: rgb(185, 196, 215);
-}
-.bluelink {
-  color: rgb(94, 125, 178);
-}
-.bluelinkhover {
-  color: rgb(65, 91, 135);
-} */
 
 * {
   min-width: 0;
+}
+
+.hidebottomscroll {
+  overflow-x: hidden;
+}
+.setlayout {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.innercontent {
+  height: calc(100vh - 250px);
 }
 
 :root[data-theme="dark"] {
@@ -126,6 +108,7 @@ coolblue: '#DCE4F2' */
   --neutral: rgb(34, 21, 81);
   --neutralhover: rgb(121, 83, 255);
   --btn-neutral-text: rgb(249, 247, 253);
+  --border: #dcd7e5;
 }
 :root[data-theme="light"] {
   color-scheme: dark;
@@ -137,12 +120,12 @@ coolblue: '#DCE4F2' */
   --neutral: rgb(249, 247, 253);
   --neutralhover: rgb(227, 225, 230);
   --btn-neutral-text: rgb(34, 21, 81);
+  --border: #49515b;
 }
-.btn-primary {
-  /* color: var(--btn-neutral-text); */
+/* .btn-primary {
   background-color: var(--primary);
   border-color: var(--primary);
-}
+} */
 
 .btn-neutral {
   color: var(--btn-neutral-text);
@@ -154,12 +137,44 @@ coolblue: '#DCE4F2' */
   background-color: var(--neutralhover);
   border-color: var(--neutralhover);
 }
-.txt-title {
+
+.nav-hover {
+  display: block;
+  cursor: pointer;
+}
+.nav-hover:hover {
+  color: var(--success);
+  /* text-decoration: underline; */
+}
+.header-title {
+  font-size: 3.75px;
+}
+/* .txt-link-title {
+  color: var(--secondary);
+  width: 100%;
+}
+.txt-link-title:hover {
+  color: var(--secondarydm);
+  text-decoration: underline;
+} */
+.txt-link {
+  color: var(--secondary);
+}
+.txt-link:hover {
+  color: var(--secondarydm);
+  text-decoration: underline;
+}
+.txt-link-tag {
   color: var(--primary);
 }
+.txt-link-tag:hover {
+  color: var(--primarydm);
+  text-decoration: underline;
+}
+
 ::selection {
-  color: var(--bananacolor);
-  background: var(--darkred);
+  color: var(--dark);
+  background: var(--accent);
 }
 
 body {
@@ -172,7 +187,35 @@ body {
   padding: 20px 30px 0 30px;
 }
 
+.section-minheight {
+  min-height: 80vh;
+  margin-bottom: 200px;
+}
 .box {
   height: calc(100vh - 100px);
   padding: 20px 30px 0 30px;
+}
+
+.btn-post {
+  display: block;
+}
+.btn-post:hover {
+  cursor: pointer;
+  background-color: rgb(248, 228, 224, 0.2);
+  /* color: var(--light); */
+}
+.post-divider {
+  border-bottom: solid 1px;
+  border-bottom-color: var(--border);
+}
+
+.tag-divider {
+  border-bottom: solid 1px;
+  border-bottom-color: var(--border);
+  /* padding-bottom: 18px; */
+}
+.thefooter {
+  border-top: solid 1px;
+  border-top-color: var(--border);
+  padding: 30px 15px 20px 15px;
 }

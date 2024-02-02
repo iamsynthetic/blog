@@ -1,32 +1,34 @@
 import type { Metadata } from "next";
-import { Rubik, Roboto_Mono } from "next/font/google";
+import { Lekton, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import { Provider } from "../utils/provider";
-// import { AppWrapper } from "../context/index";
+import { AppWrapper } from "../context/index";
 
 import { getTheme } from "../utils/getTheme";
 
-const rubik600 = Rubik({
-  subsets: ["latin"],
-  weight: "600",
-  variable: "--font-rubik600",
-});
-
-const robotomono200 = Roboto_Mono({
-  subsets: ["latin"],
-  weight: "200",
-  variable: "--font-robotomono200",
-});
-const robotomono400 = Roboto_Mono({
+const lekton400 = Lekton({
   subsets: ["latin"],
   weight: "400",
-  variable: "--font-robotomono400",
+  variable: "--font-lekton400",
 });
-const robotomono600 = Roboto_Mono({
+
+const lekton700 = Lekton({
   subsets: ["latin"],
-  weight: "600",
-  variable: "--font-robotomono600",
+  weight: "700",
+  variable: "--font-lekton700",
+});
+
+const poppins200 = Poppins({
+  subsets: ["latin"],
+  weight: "200",
+  variable: "--font-poppins200",
+});
+
+const poppins700 = Poppins({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-poppins700",
 });
 
 export const metadata: Metadata = {
@@ -45,13 +47,13 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: getTheme }} />
       </head>
       <body
-        className={`${rubik600.variable} ${robotomono200.variable} ${robotomono400.variable} ${robotomono600.variable} selection:-bg-purple-500`}
+        className={`${lekton700.variable} ${lekton400.variable} ${poppins200.variable} ${poppins700.variable} hidebottomscroll`}
       >
         <Provider>
-          {/* <AppWrapper> */}
-          <Navbar />
-          <main>{children}</main>
-          {/* </AppWrapper> */}
+          <AppWrapper>
+            <Navbar title="A BLOG" tags={true} />
+            <main>{children}</main>
+          </AppWrapper>
         </Provider>
       </body>
     </html>

@@ -13,9 +13,9 @@ function ThemeSwitch() {
   const toggletheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
     if (theme === "dark") {
-      setthememode("pastel");
+      setthememode("dark");
     } else {
-      setthememode("dracula");
+      setthememode("light");
     }
     //setthememode(theme)
   };
