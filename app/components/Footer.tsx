@@ -47,6 +47,7 @@ const Footer = ({ title = "", tags = false }: Props) => {
                 <Link
                   href={"mailto:synthetic_samurai@hotmail.com"}
                   target="_blank"
+                  passHref={true}
                 >
                   {thememode === "light" || thememode === "pastel" ? (
                     <div>
@@ -62,7 +63,11 @@ const Footer = ({ title = "", tags = false }: Props) => {
                     </div>
                   )}
                 </Link>
-                <Link className="pl-4" href="www.twitter.com" target="_blank">
+                <a
+                  className="pl-4"
+                  href="https://www.twitter.com"
+                  target="_blank"
+                >
                   {thememode === "light" || thememode === "pastel" ? (
                     <div>
                       <div className="tooltip" data-tip="Twitter">
@@ -79,7 +84,7 @@ const Footer = ({ title = "", tags = false }: Props) => {
                       </div>
                     </div>
                   )}
-                </Link>
+                </a>
               </div>
             </div>
           </div>

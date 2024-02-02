@@ -110,7 +110,7 @@ const Navbar = ({ title = "", tags = true }: Props) => {
             </form>
           </dialog>
           <div className="lekton400 text-sm pr-6 mt-[0px]">
-            <Link href="www.twitter.com" target="_blank">
+            <a href="https://www.twitter.com" target="_blank">
               {thememode === "light" || thememode === "pastel" ? (
                 <div>
                   <div className="tooltip" data-tip="Twitter">
@@ -124,7 +124,7 @@ const Navbar = ({ title = "", tags = true }: Props) => {
                   </div>
                 </div>
               )}
-            </Link>
+            </a>
           </div>
           <div className="mt-[-1px]">
             <SetTheme />
